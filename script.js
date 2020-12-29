@@ -1,4 +1,11 @@
 const icons = document.querySelectorAll('.section-1-icons i');
+const menuIcon = document.querySelector('.menu-icon');
+
+menuIcon.addEventListener('click', () => {
+  document.querySelectorAll('.target').forEach((el) => {
+    el.classList.toggle('change');
+  });
+});
 
 let i = 1;
 
